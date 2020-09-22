@@ -5,8 +5,8 @@ import seaborn as sns
 import matplotlib as mpl
 import tqdm as tqdm
 
-train_df = pd.read_csv("conways-reverse-game-of-life-2020/train.csv")
-test_df = pd.read_csv("conways-reverse-game-of-life-2020/test.csv")
+train_df = pd.read_csv("train.csv")
+test_df = pd.read_csv("test.csv")
 
 print(train_df.head())
 
@@ -68,6 +68,8 @@ final = np.asarray(train_df.iloc[wanted_id][2 + 625 : 2 + 1250])
 final_mat = initial.reshape(25, 25)
 print(f"final_mat \n{final_mat}")
 print("===============================================================")
+
+print(np.equal(final_mat, answer))
 
 """
 for i in range(3):
