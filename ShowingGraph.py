@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import matplotlib as mpl
 
-train_df = pd.read_csv("conways-reverse-game-of-life-2020/train.csv")
-test_df = pd.read_csv("conways-reverse-game-of-life-2020/test.csv")
+train_df = pd.read_csv("train.csv")
+test_df = pd.read_csv("test.csv")
 
 print(train_df.shape)
 print(train_df.shape)
