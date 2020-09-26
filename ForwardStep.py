@@ -24,7 +24,7 @@ delta = train_df.iloc[wanted_id, 1]
 print(f"delta = {delta}")
 print("===============================================================")
 
-initial = np.asarray(train_df.iloc[wanted_id][2 : 2 + 625])
+initial = np.array(train_df.iloc[wanted_id][2 : 2 + 625])
 initial_mat = initial.reshape(25, 25)
 print(f"initial_mat \n{initial_mat}")
 print("===============================================================")
@@ -64,8 +64,8 @@ answer = np.copy(extended_mat[1:26, 1:26])
 print(f"answer \n{answer}")
 print("===============================================================")
 
-final = np.asarray(train_df.iloc[wanted_id][2 + 625 : 2 + 1250])
-final_mat = initial.reshape(25, 25)
+final = np.array(train_df.iloc[wanted_id][2 + 625 : 2 + 1250])
+final_mat = final.reshape(25, 25)
 print(f"final_mat \n{final_mat}")
 print("===============================================================")
 
